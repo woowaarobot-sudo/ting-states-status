@@ -34,6 +34,8 @@
     .section h2 { margin:0 0 10px; font-size:16px; letter-spacing:-.02em; }
     .chips, .rooms { display:flex; flex-wrap:wrap; gap:8px; }
     .chip, .room { padding:7px 10px; border-radius:999px; background:var(--green2); color:#304734; font-weight:700; font-size:13px; }
+    a.room { text-decoration:none; transition:transform .18s ease, box-shadow .18s ease, background .18s ease; }
+    a.room:hover { transform:translateY(-1px); box-shadow:0 8px 18px rgba(35,39,32,.10); background:#cfe0c8; }
     .facts { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin-top:12px; }
     .fact { background:rgba(255,255,255,.68); border:1px solid var(--line); border-radius:16px; padding:11px 12px; color:var(--muted); font-size:14px; }
     .note { color:var(--muted); font-size:13px; margin-top:12px; }
@@ -57,7 +59,7 @@
       </section>
       <section class="section">
         <h2>Airbnb portfolio observed</h2>
-        <div class="rooms"><span class="room">E4C</span><span class="room">E4A</span><span class="room">E5A</span><span class="room">E5B</span><span class="room">E5C</span><span class="room">W4A</span><span class="room">W4B</span><span class="room">W4C</span><span class="room">W5B</span><span class="room">W5C</span><span class="room">S4A</span><span class="room">S4C</span><span class="room">S5A</span><span class="room">S5B</span><span class="room">S5C</span><span class="room">S5D</span></div>
+        <div class="rooms"><a class="room" href="https://www.airbnb.com.tw/rooms/1618171146065881794" target="_blank" rel="noopener">E4C</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635514073628577119" target="_blank" rel="noopener">E4A</a><a class="room" href="https://www.airbnb.com.tw/rooms/1626476098600343886" target="_blank" rel="noopener">E5A</a><a class="room" href="https://www.airbnb.com.tw/rooms/1620142299794674085" target="_blank" rel="noopener">E5B</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635459542805809041" target="_blank" rel="noopener">E5C</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635552429704484631" target="_blank" rel="noopener">W4A</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635528583717466350" target="_blank" rel="noopener">W4B</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635518712349832911" target="_blank" rel="noopener">W4C</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635490629557446483" target="_blank" rel="noopener">W5B</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635473107431866898" target="_blank" rel="noopener">W5C</a><a class="room" href="https://www.airbnb.com.tw/rooms/1620132156821653285" target="_blank" rel="noopener">S4A</a><a class="room" href="https://www.airbnb.com.tw/rooms/1675452017674286041" target="_blank" rel="noopener">S4C</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635395445347546211" target="_blank" rel="noopener">S5A</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635442558803081820" target="_blank" rel="noopener">S5B</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635450744839079227" target="_blank" rel="noopener">S5C</a><a class="room" href="https://www.airbnb.com.tw/rooms/1630481125932837793" target="_blank" rel="noopener">S5D</a></div>
         <p class="note">Specific room availability changes over time. Please use Airbnb to choose a room and confirm live details.</p>
       </section>
       <section class="section">
