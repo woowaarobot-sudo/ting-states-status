@@ -94,7 +94,7 @@
         var label = link.dataset.trackClick;
         var destination = link.dataset.trackDestination || 'external';
         if (typeof gtag === 'function') {
-          gtag('event', 'outbound_click', {
+          var eventPayload = {
             event_category: 'link_hub',
             event_label: label,
             link_text: link.textContent.trim(),
@@ -102,7 +102,15 @@
             destination: destination,
             room_code: link.dataset.roomCode || undefined,
             transport_type: 'beacon'
-          });
+          };
+          gtag('event', 'outbound_click', eventPayload);
+          if (destination === 'line') {
+            gtag('event', 'line_click', eventPayload);
+          } else if (destination === 'airbnb') {
+            gtag('event', 'airbnb_click', eventPayload);
+          } else if (destination === 'airbnb_room') {
+            gtag('event', 'airbnb_room_click', eventPayload);
+          }
         }
       });
     });
