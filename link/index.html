@@ -7,6 +7,14 @@
   <meta name="description" content="TING STATES — 16 Airbnb monthly-stay listings near NTU / NTNU / Gongguan. Check live calendar, pricing, and booking on Airbnb." />
   <meta property="og:title" content="TING STATES｜16 monthly Taipei stays near NTU / NTNU" />
   <meta property="og:description" content="Choose from 16 monthly-stay rooms near NTU / NTNU / Gongguan. Live availability, pricing, and booking through Airbnb." />
+  <!-- Google Analytics 4: traffic + outbound click tracking -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HLJRJSZDVT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HLJRJSZDVT');
+  </script>
   <style>
     * { box-sizing: border-box; }
     :root { --bg:#f5f1e9; --ink:#1d211d; --muted:#62675f; --card:rgba(255,255,255,.76); --line:rgba(29,33,29,.14); --green:#31523c; --green2:#dce7d6; --gold:#a46f2d; --shadow:0 18px 60px rgba(35,39,32,.12); }
@@ -17,9 +25,9 @@
     .badge { display:inline-flex; gap:8px; align-items:center; padding:8px 12px; border-radius:999px; background:rgba(49,82,60,.10); border:1px solid rgba(49,82,60,.16); color:var(--green); font-weight:750; font-size:13px; letter-spacing:.02em; }
     h1 { margin:18px 0 8px; font-size:clamp(38px,9vw,68px); line-height:.92; letter-spacing:-.065em; }
     .tagline { margin:0 auto; max-width:580px; color:var(--muted); font-size:17px; }
-    .photo { margin:24px auto 0; width:100%; min-height:220px; border-radius:28px; border:1px solid rgba(255,255,255,.55); background:linear-gradient(140deg,rgba(49,82,60,.82),rgba(49,82,60,.38)),radial-gradient(circle at 30% 25%,rgba(255,255,255,.30),transparent 26%),linear-gradient(135deg,#cdbb9c,#ebdfcf); display:grid; place-items:center; color:white; padding:24px; text-shadow:0 2px 20px rgba(0,0,0,.25); }
+    .photo { margin:24px auto 0; width:100%; min-height:280px; border-radius:28px; border:1px solid rgba(255,255,255,.72); background:linear-gradient(140deg,rgba(20,27,21,.68),rgba(49,82,60,.42) 45%,rgba(164,111,45,.24)),url("../assets/ting-states-hero-scene-8-3.webp"); background-size:cover; background-position:center 62%; display:grid; place-items:center; color:white; padding:24px; text-shadow:0 2px 22px rgba(0,0,0,.42); box-shadow:inset 0 0 0 1px rgba(255,255,255,.18), inset 0 -70px 110px rgba(12,18,14,.28); }
     .photo strong { font-size:26px; display:block; letter-spacing:-.04em; }
-    .photo span { opacity:.9; }
+    .photo span { opacity:.94; }
     .links { padding:0 22px 24px; display:grid; gap:12px; }
     a.link { display:flex; justify-content:space-between; align-items:center; gap:16px; text-decoration:none; color:var(--ink); background:white; border:1px solid var(--line); border-radius:20px; padding:16px; transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease; }
     a.link:hover { transform:translateY(-2px); box-shadow:0 12px 30px rgba(35,39,32,.12); border-color:rgba(49,82,60,.30); }
@@ -53,14 +61,14 @@
         <div class="photo"><div><strong>Choose from 16 Taipei monthly stays</strong><span>Live availability, pricing, and official booking are on Airbnb</span></div></div>
       </section>
       <section class="links" aria-label="Links">
-        <a class="link primary" href="https://www.airbnb.com.tw/users/profile/1618171146717790075?previous_page_name=PdpHomeMarketplace" target="_blank" rel="noopener"><span class="label"><b>Airbnb 查看 16 間房源 / 訂房</b><small>Choose a room · live calendar · pricing · official booking terms</small></span><span class="arrow">→</span></a>
-        <a class="link" href="https://lin.ee/uzLUXiq" target="_blank" rel="noopener"><span class="label"><b>LINE 官方帳號諮詢</b><small>Tell us your move-in date, stay length, people, budget, and needs</small></span><span class="arrow">→</span></a>
-        <a class="link" href="https://www.instagram.com/woowaa.smart/" target="_blank" rel="noopener"><span class="label"><b>Instagram</b><small>@woowaa.smart · photos & updates</small></span><span class="arrow">→</span></a>
-        <a class="link" href="https://www.threads.net/@woowaa.smart" target="_blank" rel="noopener"><span class="label"><b>Threads</b><small>@woowaa.smart · notes for monthly Taipei stays</small></span><span class="arrow">→</span></a>
+        <a class="link primary" href="https://www.airbnb.com.tw/users/profile/1618171146717790075?previous_page_name=PdpHomeMarketplace" target="_blank" rel="noopener" data-track-click="airbnb_profile" data-track-destination="airbnb"><span class="label"><b>Airbnb 查看 16 間房源 / 訂房</b><small>Choose a room · live calendar · pricing · official booking terms</small></span><span class="arrow">→</span></a>
+        <a class="link" href="https://lin.ee/uzLUXiq" target="_blank" rel="noopener" data-track-click="line_contact" data-track-destination="line"><span class="label"><b>LINE 官方帳號諮詢</b><small>Tell us your move-in date, stay length, people, budget, and needs</small></span><span class="arrow">→</span></a>
+        <a class="link" href="https://www.instagram.com/woowaa.smart/" target="_blank" rel="noopener" data-track-click="instagram" data-track-destination="instagram"><span class="label"><b>Instagram</b><small>@woowaa.smart · photos & updates</small></span><span class="arrow">→</span></a>
+        <a class="link" href="https://www.threads.net/@woowaa.smart" target="_blank" rel="noopener" data-track-click="threads" data-track-destination="threads"><span class="label"><b>Threads</b><small>@woowaa.smart · notes for monthly Taipei stays</small></span><span class="arrow">→</span></a>
       </section>
       <section class="section">
         <h2>Airbnb portfolio observed</h2>
-        <div class="rooms"><a class="room" href="https://www.airbnb.com.tw/rooms/1618171146065881794" target="_blank" rel="noopener">E4C</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635514073628577119" target="_blank" rel="noopener">E4A</a><a class="room" href="https://www.airbnb.com.tw/rooms/1626476098600343886" target="_blank" rel="noopener">E5A</a><a class="room" href="https://www.airbnb.com.tw/rooms/1620142299794674085" target="_blank" rel="noopener">E5B</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635459542805809041" target="_blank" rel="noopener">E5C</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635552429704484631" target="_blank" rel="noopener">W4A</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635528583717466350" target="_blank" rel="noopener">W4B</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635518712349832911" target="_blank" rel="noopener">W4C</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635490629557446483" target="_blank" rel="noopener">W5B</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635473107431866898" target="_blank" rel="noopener">W5C</a><a class="room" href="https://www.airbnb.com.tw/rooms/1620132156821653285" target="_blank" rel="noopener">S4A</a><a class="room" href="https://www.airbnb.com.tw/rooms/1675452017674286041" target="_blank" rel="noopener">S4C</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635395445347546211" target="_blank" rel="noopener">S5A</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635442558803081820" target="_blank" rel="noopener">S5B</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635450744839079227" target="_blank" rel="noopener">S5C</a><a class="room" href="https://www.airbnb.com.tw/rooms/1630481125932837793" target="_blank" rel="noopener">S5D</a></div>
+        <div class="rooms"><a class="room" href="https://www.airbnb.com.tw/rooms/1618171146065881794" target="_blank" rel="noopener" data-track-click="room_E4C" data-track-destination="airbnb_room" data-room-code="E4C">E4C</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635514073628577119" target="_blank" rel="noopener" data-track-click="room_E4A" data-track-destination="airbnb_room" data-room-code="E4A">E4A</a><a class="room" href="https://www.airbnb.com.tw/rooms/1626476098600343886" target="_blank" rel="noopener" data-track-click="room_E5A" data-track-destination="airbnb_room" data-room-code="E5A">E5A</a><a class="room" href="https://www.airbnb.com.tw/rooms/1620142299794674085" target="_blank" rel="noopener" data-track-click="room_E5B" data-track-destination="airbnb_room" data-room-code="E5B">E5B</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635459542805809041" target="_blank" rel="noopener" data-track-click="room_E5C" data-track-destination="airbnb_room" data-room-code="E5C">E5C</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635552429704484631" target="_blank" rel="noopener" data-track-click="room_W4A" data-track-destination="airbnb_room" data-room-code="W4A">W4A</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635528583717466350" target="_blank" rel="noopener" data-track-click="room_W4B" data-track-destination="airbnb_room" data-room-code="W4B">W4B</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635518712349832911" target="_blank" rel="noopener" data-track-click="room_W4C" data-track-destination="airbnb_room" data-room-code="W4C">W4C</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635490629557446483" target="_blank" rel="noopener" data-track-click="room_W5B" data-track-destination="airbnb_room" data-room-code="W5B">W5B</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635473107431866898" target="_blank" rel="noopener" data-track-click="room_W5C" data-track-destination="airbnb_room" data-room-code="W5C">W5C</a><a class="room" href="https://www.airbnb.com.tw/rooms/1620132156821653285" target="_blank" rel="noopener" data-track-click="room_S4A" data-track-destination="airbnb_room" data-room-code="S4A">S4A</a><a class="room" href="https://www.airbnb.com.tw/rooms/1675452017674286041" target="_blank" rel="noopener" data-track-click="room_S4C" data-track-destination="airbnb_room" data-room-code="S4C">S4C</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635395445347546211" target="_blank" rel="noopener" data-track-click="room_S5A" data-track-destination="airbnb_room" data-room-code="S5A">S5A</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635442558803081820" target="_blank" rel="noopener" data-track-click="room_S5B" data-track-destination="airbnb_room" data-room-code="S5B">S5B</a><a class="room" href="https://www.airbnb.com.tw/rooms/1635450744839079227" target="_blank" rel="noopener" data-track-click="room_S5C" data-track-destination="airbnb_room" data-room-code="S5C">S5C</a><a class="room" href="https://www.airbnb.com.tw/rooms/1630481125932837793" target="_blank" rel="noopener" data-track-click="room_S5D" data-track-destination="airbnb_room" data-room-code="S5D">S5D</a></div>
         <p class="note">Specific room availability changes over time. Please use Airbnb to choose a room and confirm live details.</p>
       </section>
       <section class="section">
@@ -80,5 +88,24 @@
     </article>
     <footer>TING STATES · public link hub · updated for 16 Airbnb listings</footer>
   </main>
+  <script>
+    document.querySelectorAll('[data-track-click]').forEach(function(link) {
+      link.addEventListener('click', function() {
+        var label = link.dataset.trackClick;
+        var destination = link.dataset.trackDestination || 'external';
+        if (typeof gtag === 'function') {
+          gtag('event', 'outbound_click', {
+            event_category: 'link_hub',
+            event_label: label,
+            link_text: link.textContent.trim(),
+            link_url: link.href,
+            destination: destination,
+            room_code: link.dataset.roomCode || undefined,
+            transport_type: 'beacon'
+          });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
