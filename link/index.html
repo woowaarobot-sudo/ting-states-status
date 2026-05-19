@@ -63,6 +63,7 @@
       <section class="links" aria-label="Links">
         <a class="link primary" href="https://www.airbnb.com.tw/users/profile/1618171146717790075?previous_page_name=PdpHomeMarketplace" target="_blank" rel="noopener" data-track-click="airbnb_profile" data-track-destination="airbnb"><span class="label"><b>Airbnb 查看 16 間房源 / 訂房</b><small>Choose a room · live calendar · pricing · official booking terms</small></span><span class="arrow">→</span></a>
         <a class="link" href="https://lin.ee/uzLUXiq" target="_blank" rel="noopener" data-track-click="line_contact" data-track-destination="line"><span class="label"><b>LINE 官方帳號諮詢</b><small>Tell us your move-in date, stay length, people, budget, and needs</small></span><span class="arrow">→</span></a>
+        <a class="link" href="https://wa.me/886932991249?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E8%A9%A2%E5%95%8F%20TING%20STATES%20%E6%88%BF%E6%BA%90%E3%80%82%0AHi%2C%20I%27d%20like%20to%20ask%20about%20TING%20STATES%20monthly%20stays." target="_blank" rel="noopener" data-track-click="whatsapp_contact" data-track-destination="whatsapp"><span class="label"><b>WhatsApp Business 諮詢</b><small>Bilingual inquiry · move-in date · stay length · budget · needs</small></span><span class="arrow">→</span></a>
         <a class="link" href="https://www.instagram.com/woowaa.smart/" target="_blank" rel="noopener" data-track-click="instagram" data-track-destination="instagram"><span class="label"><b>Instagram</b><small>@woowaa.smart · photos & updates</small></span><span class="arrow">→</span></a>
         <a class="link" href="https://www.threads.net/@woowaa.smart" target="_blank" rel="noopener" data-track-click="threads" data-track-destination="threads"><span class="label"><b>Threads</b><small>@woowaa.smart · notes for monthly Taipei stays</small></span><span class="arrow">→</span></a>
       </section>
@@ -106,6 +107,8 @@
           gtag('event', 'outbound_click', eventPayload);
           if (destination === 'line') {
             gtag('event', 'line_click', eventPayload);
+          } else if (destination === 'whatsapp') {
+            gtag('event', 'whatsapp_click', eventPayload);
           } else if (destination === 'airbnb') {
             gtag('event', 'airbnb_click', eventPayload);
           } else if (destination === 'airbnb_room') {
